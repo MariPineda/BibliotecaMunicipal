@@ -181,10 +181,29 @@ article p {
     grid-column: 2/3;
     grid-row: 2/3;
 }
-.feria {
-    background: url(../assets/feria1.jpg);
-    opacity: 0.5;
-    width: 85%;
+.feria-img {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+.donaciones-img {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+/* Página talleres */
+.talleres-img {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+.tipos-talleres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* Página contacto */
 input {
@@ -357,7 +376,6 @@ footer svg {
     header nav {
         font-weight: 600;
     }
-
     ul li {
         font-size: 1.8rem;
     }
