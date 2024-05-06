@@ -153,7 +153,7 @@ article p {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     height: 50vh;
 }
 /* Página Libros */
@@ -259,12 +259,33 @@ footer svg {
 }
 /*mobile*/
 @media screen and (min-width: 320px) and (max-width: 767px){
+    header nav {
+        font-weight: 400;
+    }
     ul li {
         font-size: 1.3rem;
     }
     .logo {
         width: 3rem;
         height: 3rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+    article p {
+        font-size: 1rem;
+    }
+    .libros {
+        width: 30%;
     }
     footer ul li  {
         font-size: 0.8rem;
@@ -333,6 +354,9 @@ footer svg {
 }
 /*tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px){
+    header nav {
+        font-weight: 600;
+    }
 
     ul li {
         font-size: 1.8rem;
@@ -340,6 +364,24 @@ footer svg {
     .logo {
         width: 6rem;
         height: 6rem;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    article p {
+        font-size: 1.3rem;
+    }
+    .libros {
+        width: 20%;
     }
     footer ul li  {
         font-size: 1rem;
@@ -396,13 +438,33 @@ footer svg {
 }
 /*desktop*/
 @media screen and (min-width: 1024px) and (orientation: landscape){
-
+    header nav {
+        font-weight: 700;
+    }
     ul li {
         font-size: 2rem;
     }
     .logo {
         width: 8rem;
         height: 8rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    h3 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 1.8rem;
+    }
+    article p {
+        font-size: 1.3rem;
+    }
+    .libros {
+        width: 15%;
     }
     footer ul li  {
         font-size: 1.3rem;
