@@ -248,6 +248,10 @@ form .btn-submit {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  transition: color 2s;
+}
+form .btn-submit:hover {
+  color: rgb(113, 113, 171);
 }
 
 .textos, html body section article h3, html body section h2, html body main h1 {
