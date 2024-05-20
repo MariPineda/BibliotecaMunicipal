@@ -281,6 +281,7 @@ html{
             animation-name: moverBoton;
             animation-duration: 3s;
             animation-delay: 0.5s;
+            animation-timing-function: linear;
             animation-iteration-count: infinite;
         }
         .parallax {
@@ -296,12 +297,32 @@ html{
             height: 50%;
             display: flex;
             justify-content: center;
+
+            @include mobile {
+                width: 30%;
+            }
+            @include tablet {
+                width: 40%;
+            }
+            @include desktop {
+                width: 50%;
+            }
         }
         .donaciones-img {
             width: 50%;
             height: 50%;
             display: flex;
             justify-content: center;
+
+            @include mobile {
+                width: 30%;
+            }
+            @include tablet {
+                width: 40%;
+            }
+            @include desktop {
+                width: 50%;
+            }
         }
         .tipos-talleres {
             display: flex;
