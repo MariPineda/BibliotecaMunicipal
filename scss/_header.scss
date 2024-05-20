@@ -68,27 +68,27 @@ header {
                 flex-direction: row;
                 justify-content:space-between;
                 align-items:center;                       
-                    li { 
-                        color: rgb(123, 118, 118);
-                        font-family: "Poppins", sans-serif;
-                        font-weight: 400;
-                        font-size: 1.3rem;
-                        font-style: normal;
-                        list-style-type: none;
-                        &:hover {
-                            color: rgb(43, 45, 44) ;
-                        } 
-
-                        @include mobile {
-                            font-size: 1.3rem;
-                        }
-                        @include tablet {
-                            font-size: 1.8rem;
-                        }
-                        @include desktop {
-                            font-size: 2rem;
-                        }
+                li { 
+                    color: rgb(123, 118, 118);
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 400;
+                    font-size: 1.3rem;
+                    font-style: normal;
+                    list-style-type: none;
+                    &:hover {
+                        color: rgb(43, 45, 44) ;
                     } 
+
+                    @include mobile {
+                        font-size: 1.3rem;
+                    }
+                    @include tablet {
+                        font-size: 1.8rem;
+                    }
+                    @include desktop {
+                        font-size: 2rem;
+                    }
+                } 
             }
         }
     }
