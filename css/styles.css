@@ -1,399 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0 auto;
+  padding: 0;
+  width: 98%;
+  box-sizing: border-box;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    margin: 0 auto;
-    padding: 0;
-    width: 98%;
-    box-sizing: border-box;
-}
-html{
-    font-size: 62.5%;
-    /* 1 rem = 10px*/
-}
-body {
-    overflow-x: hidden;
-    background-color: rgb(242, 244, 247);
-}
-/* header */
 header {
-    background-color: #D3CBDB;
+  background-color: #D3CBDB;
 }
 header nav {
-    color: rgb(123, 118, 118);
-    font-family: "Poppins", sans-serif;
+  color: rgb(123, 118, 118);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: large;
+  font-style: normal;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header nav {
     font-weight: 400;
-    font-size:large;
-    font-style: normal;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  }
 }
-header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items:center;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav {
+    font-weight: 600;
+  }
 }
-header nav ul li :hover {
-    color: rgb(43, 45, 44) ;
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  header nav {
+    font-weight: 700;
+  }
 }
-nav a {
-    font-size: 1.3rem;
+header nav div a {
+  font-size: 1.3rem;
+  text-decoration: none;
 }
-.logo {
+header nav div a img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header nav div a img {
     width: 3rem;
     height: 3rem;
-    margin-left: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  }
 }
-ul li {
-    color: rgb(123, 118, 118);
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav div a img {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  header nav div a img {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+header nav div button span .color-icon {
+  color: rgb(123, 118, 118);
+}
+header nav div ul:nth-child(1) {
+  background-color: #d8d1df;
+}
+header nav div ul:nth-child(2) {
+  background-color: #ddd7e3;
+}
+header nav div ul:nth-child(3) {
+  background-color: #e2dde8;
+}
+header nav div ul:nth-child(4) {
+  background-color: #e7e3ec;
+}
+header nav div ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav div ul li {
+  color: rgb(123, 118, 118);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  font-style: normal;
+  list-style-type: none;
+}
+header nav div ul li:hover {
+  color: rgb(43, 45, 44);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header nav div ul li {
     font-size: 1.3rem;
-    font-style: normal;
-    list-style-type: none;
+  }
 }
-.color-icon {
-    color: rgb(123, 118, 118); 
-}
-
-/* textos */
-h1 {
-    color: #750BDB ;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    text-align: center;
-    font-size: 2rem;
-    padding: 1rem;
-}
-h2 {
-    color: #750BDB;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    list-style-type: none;
-    text-align: center;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header nav div ul li {
     font-size: 1.8rem;
-    padding: 1rem;
+  }
 }
-h3 {
-    color: rgb(113, 113, 171) ;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    text-align: center;
-    font-size: 1.5rem;
-}
-p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-    font-size: 1.5rem;
-    color: rgb(113, 113, 171);
-    padding: 1rem;
-}
-a {
-    text-decoration: none;
-}
-/* contenido */
- /* Página inicio */
-
-.carousel-inner img {
-    width: 70%;
-    border-radius: 7%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  header nav div ul li {
+    font-size: 2rem;
+  }
 }
 
-article {
-    width: 82.5%;
-    height: 20rem;
-    background-color: #DCD4CA;
-    padding: 2rem;
-    margin-bottom: 1.5rem;
-}
-article svg {
-    width: 200px;
-    height: 200px;
-}
-.libros {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    flex-grow: auto;
-    gap: 1rem;
-    width: 20%;
-    padding: auto;
-    margin-bottom: auto;
-}
-article p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-    font-size: 1rem;
-    color: rgb(113, 113, 171);
-    padding: 0.5rem;
-}
-/* Páguna Acerca de nosotros */
-.parallax {
-    background-image: url(../assets/parallax.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 50vh;
-}
-/* Página Libros */
-/* grid */
-.grid-galeria {
-    width: 50%;
-    display: grid;
-    justify-content:center;
-    align-content:center;
-    align-items:flex-end;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: auto;
-    grid-column-gap: 0.5rem;
-}
-.galeria-img-uno {
-    grid-column: 1/2;
-    grid-row: 1/3;
-}
-.galeria-img-dos {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-.galeria-img-tres {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-.feria-img {
-    width: 50%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-}
-.donaciones-img {
-    width: 50%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-}
-/* Página talleres */
-.talleres-img {
-    width: 50%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-}
-.tipos-talleres {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/* Página contacto */
-input {
-    display: block;
-    margin-bottom: 0.5rem;
-}
-textarea {
-    height: 5rem;
-    margin-left: 1rem;
-}
-/*formulario*/
-form {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    text-align: justify;
-    font-size: 1.6rem;
-    color: rgb(113, 113, 171);
-}
-.btn-submit {
-    background-color: #D3CBDB;
-    border-radius: 2%;
-    width: 10rem;
-    height: 3rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    text-align: justify;
-    font-size: 1.6rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-/* footer */
 footer {
-    background-color: #D3CBDB ;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  background-color: #D3CBDB;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 footer nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-footer ul li  {
+footer nav ul li {
+  color: rgb(96, 86, 86);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  font-style: normal;
+  list-style-type: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  footer nav ul li {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  footer nav ul li {
     font-size: 1rem;
+  }
 }
-footer p{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    font-size: 1rem;
-    padding-left: 0.5rem;
-    padding-bottom: 0.5rem;
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  footer nav ul li {
+    font-size: 1.3rem;
+  }
 }
-.btn-wpp{
-    border-radius: 50%;
-    width: 5rem;
-    height: 5rem;
-    background-color: green;
-    color: white;
-    padding: 1rem;
-    position: fixed;
-    bottom: 2rem;
-    left: 2rem;
+footer nav ul li svg {
+  color: rgb(96, 86, 86);
+  width: 3rem;
+  height: 3rem;
 }
-footer svg {
-    color: rgb(96, 86, 86);
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  footer nav ul li svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  footer nav ul li svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  footer nav ul li svg {
     width: 3rem;
     height: 3rem;
+  }
 }
-/*mobile*/
-@media screen and (min-width: 320px) and (max-width: 767px){
-    header nav {
-        font-weight: 400;
-    }
-    ul li {
-        font-size: 1.3rem;
-    }
-    .logo {
-        width: 3rem;
-        height: 3rem;
-    }
-    h1 {
-        font-size: 1.5rem;
-    }
-    h2 {
-        font-size: 1.3rem;
-    }
-    h3 {
-        font-size: 1.3rem;
-    }
-    p {
-        font-size: 1.3rem;
-    }
-    article p {
-        font-size: 1rem;
-    }
-    .libros {
-        width: 30%;
-    }
-    footer ul li  {
-        font-size: 0.8rem;
-    }
-    footer svg {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-    footer p{
-        font-size: 0.8rem;
-    }
+footer p {
+  color: rgb(96, 86, 86);
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
 }
-/*tablet*/
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    header nav {
-        font-weight: 600;
-    }
-    ul li {
-        font-size: 1.8rem;
-    }
-    .logo {
-        width: 6rem;
-        height: 6rem;
-    }
-    h1 {
-        font-size: 1.8rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    h3 {
-        font-size: 1.6rem;
-    }
-    p {
-        font-size: 1.5rem;
-    }
-    article p {
-        font-size: 1.3rem;
-    }
-    .libros {
-        width: 20%;
-    }
-    footer ul li  {
-        font-size: 1rem;
-    }
-    footer svg {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-    footer p{
-        font-size: 1rem;
-    }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  footer p {
+    font-size: 0.8rem;
+  }
 }
-/*desktop*/
-@media screen and (min-width: 1024px) and (orientation: landscape){
-    header nav {
-        font-weight: 700;
-    }
-    ul li {
-        font-size: 2rem;
-    }
-    .logo {
-        width: 8rem;
-        height: 8rem;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    h2 {
-        font-size: 1.8em;
-    }
-    h3 {
-        font-size: 1.8rem;
-    }
-    p {
-        font-size: 1.8rem;
-    }
-    article p {
-        font-size: 1.3rem;
-    }
-    .libros {
-        width: 15%;
-    }
-    footer ul li  {
-        font-size: 1.3rem;
-    }
-    footer p{
-        font-size: 1.3rem;
-    }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  footer p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  footer p {
+    font-size: 1.3rem;
+  }
 }
 
+@media (max-width: 768px) {
+  div {
+    width: 360px;
+  }
+}
+form {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: justify;
+  font-size: 1.6rem;
+  color: rgb(113, 113, 171);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  form {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  form {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  form {
+    font-size: 1.8rem;
+  }
+}
+form input {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+form textarea {
+  height: 5rem;
+  margin-left: 1rem;
+}
+form .btn-submit {
+  background-color: #D3CBDB;
+  border-radius: 2%;
+  width: 10rem;
+  height: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: justify;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  transition: color 2s;
+}
+form .btn-submit:hover {
+  color: rgb(113, 113, 171);
+}
+
+.textos, html body section article h3, html body section h2, html body main h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1 rem = 10px*/
+}
+html body {
+  overflow-x: hidden;
+  background-color: rgb(242, 244, 247);
+}
+html body main h1 {
+  color: #750BDB;
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 1rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body main h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html body main h1 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  html body main h1 {
+    font-size: 2rem;
+  }
+}
+html body main p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(113, 113, 171);
+  padding: 0.5rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body main p {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html body main p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  html body main p {
+    font-size: 1.8em;
+  }
+}
+html body main .grid-galeria {
+  width: 50%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-end;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: auto;
+  grid-column-gap: 0.5rem;
+}
+html body main .galeria-img-uno {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+html body main .galeria-img-dos {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+html body main .galeria-img-tres {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+html body main .talleres-img {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+html body main section p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(113, 113, 171);
+  padding: 1rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body main section p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html body main section p {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  html body main section p {
+    font-size: 1.5rem;
+  }
+}
+html body main section div .carousel-inner img {
+  width: 70%;
+  border-radius: 7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body main section div .carousel-inner img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html body main section div .carousel-inner img {
+    width: 62%;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  html body main section div .carousel-inner img {
+    width: 65%;
+  }
+}
+html body section h2 {
+  color: #750BDB;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body section h2 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html body section h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  html body section h2 {
+    font-size: 1.8rem;
+  }
+}
+html body section p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(113, 113, 171);
+  padding: 0.5rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body section p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html body section p {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  html body section p {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body section .libros {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html body section .libros {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  html body section .libros {
+    width: 15%;
+  }
+}
+html body section article {
+  width: 82.5%;
+  height: 20rem;
+  background-color: #DCD4CA;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+html body section article svg {
+  width: 200px;
+  height: 200px;
+}
+html body section article h3 {
+  color: rgb(113, 113, 171);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body section article h3 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html body section article h3 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  html body section article h3 {
+    font-size: 1.8rem;
+  }
+}
+html body section article h3 a {
+  color: #750BDB;
+  font-family: "Montserrat", sans-serif;
+}
+html body section article div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: auto;
+  gap: 1rem;
+  width: 20%;
+  padding: auto;
+  margin-bottom: auto;
+}
+html body section .feria-img {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body section .feria-img {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html body section .feria-img {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  html body section .feria-img {
+    width: 50%;
+  }
+}
+html body section .donaciones-img {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body section .donaciones-img {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html body section .donaciones-img {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  html body section .donaciones-img {
+    width: 50%;
+  }
+}
+html body section ul li {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  list-style-type: none;
+  font-size: 1rem;
+  color: rgb(113, 113, 171);
+  padding: 0.5rem;
+}
+html body section ul li .tipos-talleres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  html body section ul li {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html body section ul li {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  html body section ul li {
+    font-size: 1.6rem;
+  }
+}
+html body .parallax {
+  background-image: url(../assets/parallax.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+@keyframes moverBoton {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1.1, 1.1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  75% {
+    transform: scale(1.3, 1.3);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+html body .btn-wpp {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  background-image: radial-gradient(rgb(139, 212, 139), green);
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  animation-name: moverBoton;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}/*# sourceMappingURL=styles.css.map */

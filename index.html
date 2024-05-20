@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web Biblioteca Municipal. Variedad de libros y talleres.">
+    <meta name="keywords" content="biblioteca, libros, talleres, comunidad, municipal">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/favicon-16x16.png">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Biblioteca Municipal</title>
@@ -77,7 +80,7 @@
         <article>
             <h3><a href="./pages/libros.html">Libros</a></h3>
             <p> Contamos con una gran cantidad de libros de diversos géneros y para todas las edades . Acercate y dales un vistazo.</p>
-            <div class="libros">
+            <div class="libros" data-aos="fade-up-right" data-aos-easing="linear" data-aos-duration="1500">
                 <img src="./assets/niños.jpg" alt="Imaginación">
                 <img src="./assets/book-3998252_1280.jpg" alt="Libro">
                 <img src="./assets/historietas.jpg" alt="Clásicos" >
@@ -87,7 +90,7 @@
         <article>
             <h3><a href="./pages/talleres.html">Talleres</a></h3>
             <p>Los talleres que se dictan son diversos y dirigidos a distintas edades. Apuntados a ofrecer actividades de ocio, diversión, entretenimiento y aprendizaje.</p>
-            <div class="libros">
+            <div class="libros" data-aos="fade-up-left" data-aos-easing="linear" data-aos-duration="1500">
                 <img src="./assets/workshops-3527974_1280.jpg" alt="Talleres">
                 <img src="./assets/tallerninos.jpg" alt="Niños">
                 <img src="./assets/tallerteatro (1).jpg" alt="Teatro">
@@ -123,5 +126,9 @@
         <p>Copyright 2024 Biblioteca Municipal. Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
